@@ -3,7 +3,11 @@ pipeline {
   stages {
     stage('deploy') {
       steps {
-        sh 'echo deploy to $THISENV'
+         sh 'echo Shell $PWD' 
+        // interpolated by the shell
+        sh '''echo Shell $PWD'''
+        // interpolated in this file by Groovy
+        sh "echo Groovy $PWD"
       }
     }
   }
