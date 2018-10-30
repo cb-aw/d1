@@ -10,9 +10,8 @@ pipeline {
             }
       // input {
       //          message "Should we continue to deploy to the $THISENV ?"
-      //          submitter "adrian,prod-dev-1,test-dev-1"
-                
-      }
+      //          submitter "adrian,prod-dev-1,test-dev-1"        
+      //}
       steps {
          sh 'echo DEPLOY TO $THISENV using the DEPLOY CREDENTIALS $DEPLOYCREDS - deliberately masked in output'
         
