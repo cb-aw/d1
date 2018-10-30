@@ -10,7 +10,6 @@ pipeline {
             }
       input {
                 message "Should we continue to deploy to the $THISENV ?"
-                ok "Yes, we should."
                 submitter "adrian,prod-dev-1,test-dev-1"
                 
       }
