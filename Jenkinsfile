@@ -3,10 +3,10 @@ pipeline {
   stages {
     stage('deploy') {
        environment {
-               DEPLOY-CREDS = credentials('deployment-env-credentials')
+               DEPLOYCREDS = credentials('deployment-env-credentials')
             }
       steps {
-         sh 'echo DEPLOY TO $THISENV using the DEPLOY CREDENTIALS $DEPLOY-CREDS'
+         sh 'echo DEPLOY TO $THISENV using the DEPLOY CREDENTIALS $DEPLOYCREDS'
      
       }
     }
