@@ -8,9 +8,9 @@ pipeline {
        environment {
                DEPLOYCREDS = credentials('deployment-env-credentials')
             }
-      input {
-                message "Should we continue to deploy to the $THISENV ?"
-                submitter "adrian,prod-dev-1,test-dev-1"
+      // input {
+      //          message "Should we continue to deploy to the $THISENV ?"
+      //          submitter "adrian,prod-dev-1,test-dev-1"
                 
       }
       steps {
